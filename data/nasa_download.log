@@ -1,0 +1,102 @@
+
+══════════════════════════════════════════════════════════════════════
+Session: 2026-06-25T21:11:59.161525
+══════════════════════════════════════════════════════════════════════
+
+  Project root: /Users/rishi/projects/BMS_AI
+  NASA battery: /Users/rishi/projects/BMS_AI/data/raw/nasa_battery
+  Downloads:    /Users/rishi/projects/BMS_AI/data/raw/nasa_downloads
+
+  Target datasets: [5, 11, 15]
+  Battery datasets: [5, 11, 15]
+
+══════════════════════════════════════════════════════════════════════
+  DOWNLOADING 3 DATASETS
+  Destination: /Users/rishi/projects/BMS_AI/data/raw/nasa_battery
+══════════════════════════════════════════════════════════════════════
+
+[1/3] Dataset #5: Battery Data Set
+────────────────────────────────────────────────────────────────────
+  URL:  https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip
+  Size: ~~42 MB
+  Notes: Li-Ion 18650, charge/discharge/impedance, B0005-B0056
+  Downloading...
+    Attempt 1/3: GET https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip
+    ✓ Downloaded 200.0 MB → /Users/rishi/projects/BMS_AI/data/raw/nasa_downloads/5.+Battery+Data+Set.zip
+  Extracting...
+    Extracting 5.+Battery+Data+Set.zip...
+    7 files in archive
+    ✓ Extracted → /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set
+
+  Preparing Dataset #5 (Battery Data Set)...
+  ⚠ No .mat files found in /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set
+    Contents: [PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/.extracted_ok'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set/2. BatteryAgingARC_25_26_27_28_P1.zip'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set/1. BatteryAgingARC-FY08Q4.zip'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set/5. BatteryAgingARC_49_50_51_52.zip'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set/6. BatteryAgingARC_53_54_55_56.zip'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set/4. BatteryAgingARC_45_46_47_48.zip'), PosixPath('/Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/5._Battery_Data_Set/5. Battery Data Set/3. BatteryAgingARC_25-44.zip')]
+
+[2/3] Dataset #11: Randomized Battery Usage
+────────────────────────────────────────────────────────────────────
+  URL:  https://phm-datasets.s3.amazonaws.com/NASA/11.+Randomized+Battery+Usage+Data+Set.zip
+  Size: ~~220 MB
+  Notes: 7 randomized current profile experiments, ref. benchmarks
+  Downloading...
+    Attempt 1/3: GET https://phm-datasets.s3.amazonaws.com/NASA/11.+Randomized+Battery+Usage+Data+Set.zip
+    ✓ Downloaded 1016.4 MB → /Users/rishi/projects/BMS_AI/data/raw/nasa_downloads/11.+Randomized+Battery+Usage+Data+Set.zip
+  Extracting...
+    Extracting 11.+Randomized+Battery+Usage+Data+Set.zip...
+    8 files in archive
+    ✓ Extracted → /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/11._Randomized_Battery_Usage_Data_Set
+
+  Preparing Dataset #11 (Randomized Battery Usage)...
+  ⚠ No .mat files found in /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/11._Randomized_Battery_Usage_Data_Set
+
+[3/3] Dataset #15: HIRF Battery Data Set
+────────────────────────────────────────────────────────────────────
+  URL:  https://phm-datasets.s3.amazonaws.com/NASA/15.+HIRF+Battery+Data+Set.zip
+  Size: ~~20 MB
+  Notes: Edge 540 aircraft battery in HIRF chamber
+  Downloading...
+    Attempt 1/3: GET https://phm-datasets.s3.amazonaws.com/NASA/15.+HIRF+Battery+Data+Set.zip
+    ✓ Downloaded 1.0 GB → /Users/rishi/projects/BMS_AI/data/raw/nasa_downloads/15.+HIRF+Battery+Data+Set.zip
+  Extracting...
+    Extracting 15.+HIRF+Battery+Data+Set.zip...
+    7 files in archive
+    ✓ Extracted → /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/15._HIRF_Battery_Data_Set
+
+  Preparing Dataset #15 (HIRF Battery)...
+  ⚠ No data files found in /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted/15._HIRF_Battery_Data_Set
+  ✅ Patched nasa_loader.py with discover_battery_mat_files()
+  No .mat files to verify.
+
+  Manifest saved → /Users/rishi/projects/BMS_AI/data/raw/nasa_manifest.json
+
+══════════════════════════════════════════════════════════════════════
+  DOWNLOAD REPORT
+══════════════════════════════════════════════════════════════════════
+  ✓ Battery datasets ready: [5, 11, 15]
+  ✓ Other datasets extracted: []
+
+  Battery .mat files in /Users/rishi/projects/BMS_AI/data/raw/nasa_battery:
+    Total: 0 files
+
+  ⚠️  No .mat files found. Check download errors above.
+
+  Battery datasets directory: /Users/rishi/projects/BMS_AI/data/raw/nasa_battery
+  Raw ZIPs:                   /Users/rishi/projects/BMS_AI/data/raw/nasa_downloads
+  Extracted:                  /Users/rishi/projects/BMS_AI/data/raw/nasa_extracted
+  Log file:                   /Users/rishi/projects/BMS_AI/data/nasa_download.log
+
+  Dataset citations:
+    #1: Bebout et al. (NASA Ames, 2007)
+    #2: Saxena, Goebel et al. (NASA/Stanford, 2012)
+    #3: Agogino, Goebel (UC Berkeley, 2007)
+    #4: Lee et al. (IMS, UC Cincinnati, 2007)
+    #5: Saha, Goebel (NASA PCoE, 2007)
+    #6: Saxena, Goebel (NASA PCoE, 2008)
+    #8: Celaya, Wysocki, Goebel (NASA PCoE, 2009)
+    #10: FEMTO-ST Institute (Besançon, France, 2012)
+    #11: Bole, Kulkarni, Daigle (NASA PCoE, 2014)
+    #12: Renwick, Kulkarni, Celaya (NASA, 2015)
+    #13: Celaya, Saxena, Saha, Goebel (NASA, 2011)
+    #15: Kulkarni, Hogge, Quach, Goebel (NASA, 2015)
+    #17: Chao, Kulkarni, Goebel, Fink (NASA/ETH/PARC, 2021)
+
+══════════════════════════════════════════════════════════════════════

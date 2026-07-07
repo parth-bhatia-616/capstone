@@ -1,0 +1,18 @@
+# Virtual environments
+bms_env/
+new_env/
+
+# Python cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Large datasets and logs
+trace.log
+test.png
+debug.py
+data/raw/
+5. Battery Data Set/
+8. IGBT Accelerated Aging/
+*.zip
+*.mat
